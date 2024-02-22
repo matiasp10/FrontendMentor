@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --primary-green: hsl(75, 84%, 57%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-darkgrey: hsl(0, 0%, 12%);
+  --neutral-offblack: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0;
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--neutral-offblack);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  width: 300px;
+  background-color: var(--neutral-darkgrey);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--neutral-white);
+  margin: 8px 0;
+}
+.subtitle {
+  color: var(--primary-green);
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.text {
+  text-align: center;
+  color: var(--neutral-white);
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  background-color: var(--neutral-grey);
+  color: var(--neutral-white);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-green);
+  color: var(--neutral-offblack);
+}
+
+.attribution {
+  color: var(--neutral-white);
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 376px) {
+  .profile {
+    width: 350px;
+  }
+}
